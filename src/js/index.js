@@ -35,7 +35,7 @@ $(function () {
         let top = $('#' + $(this).attr('data-title')).offset().top;
         $('html').animate({
             scrollTop: top
-        }, 1980);
+        }, 400);
     });
 
     $(window).on('scroll', function () {
@@ -43,6 +43,7 @@ $(function () {
         let index = Math.round(scrollTop / 1980);
         // let top = $('.tools').offset().top;
         // console.log(top);
+        // console.log(index);
 
         $('#menu>a').removeClass('active');
         $('#menu>a:eq(' + index + ')').addClass('active');
