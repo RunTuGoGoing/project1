@@ -20,6 +20,7 @@
     <script src="../src/js/jquery.js"></script>
     <script src="../src/js/jquery.slider.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/index-ajax.js"></script>
 </head>
 
 <body>
@@ -114,8 +115,9 @@
         <div class="wrapper">
             <div class="logo">
                 <h1>
-                    <a href=""><img src="../src/img/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png"
-                            alt=""></a>
+                    <a href="">
+                        <img src="../src/img/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png" alt="">
+                    </a>
                 </h1>
             </div>
 
@@ -151,6 +153,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="search-box">
                     <div class="baby">
                         宝贝
@@ -220,7 +223,7 @@
                             <a href="javascript:;" data-title="text-last">
                                 猜你喜欢
                             </a>
-                            <a href="javascript:;" id="topUp" style="display: none;">
+                            <a href="javascript:;" id="topUp" style="display: none;" data-title="header">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-xiangxiajiantou-copy"></use>
                                 </svg>
@@ -448,10 +451,8 @@
                                         <img src="../src/img/banner8.jpg" alt="">
                                         <img src="../src/img/banner9.jpg" alt="">
                                         <img src="../src/img/banner10.jpg" alt="">
-                                        <img src="../src/img/TB1jq1HekvoK1RjSZPfXXXPKFXa-502-380.jpg_240x240q90.jpg"
-                                            alt="">
-                                        <img src="../src/img/TB1NASFejDpK1RjSZFrXXa78VXa-502-380.jpg_240x240q90.jpg"
-                                            alt="">
+                                        <img src="../src/img/tu1.jpg" alt="">
+                                        <img src="../src/img/tu2.jpg" alt="">
                                     </div>
                                     <span class="prev">
                                         <svg class="icon" aria-hidden="true">
@@ -628,8 +629,8 @@
             <div class="main-fourth">
                 <div class="wrapper">
                     <div class="list">
-                        <div class="one-line">
-                            <div class="block">
+                        <div class="one-line" id="one-line-first">
+                            <div class="block" id="block">
                                 <a href="../src/item.html">
                                     <img src="../src/img/papr.webp" alt="">
                                     <h4>心相印纸巾抽纸整箱大包家用实惠装卫生纸心心相印餐巾纸面巾纸抽</h4>

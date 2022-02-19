@@ -23,7 +23,7 @@ $(function () {
         showImgOne.attr('src', `${$(this).attr('src')}`);
     });
 
-    // 判断开关
+    // 判断开关 左端宝贝分类
     var flag = false;
     $('.bottom-two>ul>.li>i>span:nth-of-type(2)').on('click', function () {
         let index = $('.bottom-two>ul>.li>i>span:nth-of-type(2)').index(this);
@@ -48,16 +48,28 @@ $(function () {
         }
     })
 
-    // 单选框的选中
+});
+
+$(function () {
+    // 单选框的选中和取消
     $('.main-all>.main-content-two>.second>.one>ul>li').on('click', function () {
         let index = $('.main-all>.main-content-two>.second>.one>ul>li').index(this);
         $('.main-all>.main-content-two>.second>.one>ul>li').eq(index).addClass('colorAll').siblings().removeClass('colorAll');
-        $('.main-all>.main-content-two>.second>.one>ul>li>label>input').eq(index).attr('checked','checked').siblings().attr('checked','false')
-        console.log($('.main-all>.main-content-two>.second>.one>ul>li>label>input').eq(index).attr('checked','checked'));
+        $('.main-all>.main-content-two>.second>.one>ul>li>label>input').eq(index).prop('checked', 'checked').siblings().removerProp('checked', 'checked')
     })
 });
 
-// 图片的拖拽
+$(function () {
+    // 宝贝排行榜的mouseover切换 选项卡的mouseover
+    $('.choose>span').on('mouseover', function () {
+        let index = $('.choose>span').index(this);
+        $('.choose>span').eq(index).addClass('spanHover').siblings().removeClass('spanHover');
+
+        $('.img-next>ul').eq(index).addClass('display').siblings().removeClass('display');
+    })
+});
+
+// 淘宝商品的放大镜
 window.onload = function () {
     var box = document.querySelector(".box");
     var show = document.querySelector(".show");
@@ -108,8 +120,8 @@ window.onload = function () {
         // console.log(ol);
         // console.log(ot);
 
-        var left = cliX - ol;
-        var top = cliY - ot - 66;
+        var left = (cliX - ol);
+        var top = (cliY - ot) - 66;
         // console.log(top);
 
         if (left <= (moveWidth / 2)) {
@@ -138,11 +150,39 @@ window.onload = function () {
 
 };
 
-// 多选框
+// 详情介绍选项卡
 $(function () {
     $('.one-all>.right>ul>li').on('click', function () {
         $(this).addClass('block').siblings().removeClass('block');
         let index = $('.one-all>.right>ul>li').index(this);
         $('#detailed>.wrapper>.two>.main-all>div').eq(index).addClass('display').siblings().removeClass('display');
     });
+});
+
+$(function () {
+    // 增加按键
+    $('#up').on('click', function () {
+        let number = $('#digit').attr('value');
+        number++;
+        $('#digit').attr('value', number++);
+
+        if (number >= 2) {
+            $('#down').attr('style', 'cursor: pointer;color: #000;');
+        }
+    })
+
+    // 减少按键
+    $('#down').on('click', function () {
+        let number = $('#digit').attr('value');
+        if (number < 2) {
+            let number = 1;
+        } else {
+            number--;
+        }
+        $('#digit').attr('value', number--);
+
+        if (number < 1) {
+            $('#down').attr('style', 'cursor: not-allowed;color: #ccc;');
+        }
+    })
 });

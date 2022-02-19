@@ -87,6 +87,92 @@
 #header .nav .nav-left .mr a:hover {
   color: #FF4400;
 }
+#header .nav .nav-left .red {
+  padding-left: 10px;
+  margin-left: -10px;
+}
+#header .nav .nav-left .red a {
+  color: #6c6c6c;
+}
+#header .nav .nav-left .red:hover {
+  margin-top: -1px;
+  margin-right: 17px;
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+  border-bottom: none;
+  border-left: none;
+}
+#header .nav .nav-left .red:hover .poa {
+  width: 268px;
+  height: 118px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  z-index: 99999999;
+  left: 0px;
+  top: 35px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+#header .nav .nav-left .red:hover .poa .poa-one {
+  display: flex;
+}
+#header .nav .nav-left .red:hover .poa .poa-one span:nth-of-type(1) {
+  margin: 20px 0 0 30px;
+}
+#header .nav .nav-left .red:hover .poa .poa-one span:nth-of-type(1) a img {
+  border-radius: 50%;
+}
+#header .nav .nav-left .red:hover .poa .poa-one ul li {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #000;
+}
+#header .nav .nav-left .red:hover .poa .poa-one ul li:nth-of-type(2) {
+  margin-top: -16px;
+  margin-left: 25px;
+}
+#header .nav .nav-left .red:hover .poa .under {
+  display: block;
+  width: 250px;
+  height: 26px;
+  background-color: #fff0e8;
+  border: 1px solid #ffe8de;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 10px;
+}
+#header .nav .nav-left .red:hover .poa .under a {
+  color: #000;
+}
+#header .nav .nav-left .red:hover .poa .under:hover a {
+  color: #ff4400;
+}
+#header .nav .nav-left .red:hover .poa .right-top {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+#header .nav .nav-left .red:hover .poa .right-top a {
+  color: #000;
+}
+#header .nav .nav-left .red:hover .poa .right-top a:hover {
+  color: #FF4400;
+}
+#header .nav .nav-left .red:hover .poa .right-top em {
+  font-style: normal;
+  padding: 0 2px;
+  color: #ccccd0;
+}
+#header .nav .nav-left .mr {
+  margin-right: 18px;
+}
+#header .nav .nav-left .mr a {
+  color: #6c6c6c;
+}
+#header .nav .nav-left .mr a:hover {
+  color: #FF4400;
+}
 #header .nav .nav-right {
   display: flex;
   position: relative;
@@ -846,8 +932,6 @@
 }
 #item .wrapper .all .left .box .show img {
   display: block;
-  width: 400px;
-  height: 400px;
 }
 #item .wrapper .all .left .box .show .move {
   background: url('../img/big.png') repeat scroll 0 0 transparent;
@@ -892,8 +976,8 @@
   height: 50px;
 }
 #item .wrapper .all .left ul li a img {
-  width: 48px;
-  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
 }
 #item .wrapper .all .left .write a {
   color: #6C6C6C;

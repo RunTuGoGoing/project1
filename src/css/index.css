@@ -821,6 +821,12 @@ body {
   border-radius: 12px;
   margin-right: 6px;
 }
+#main .main-second .left .image .bottom .img-bottom .bottom-two .one img:nth-of-type(9),
+#main .main-second .left .image .bottom .img-bottom .bottom-two .one img:nth-of-type(10) {
+  width: 250px;
+  height: 155px;
+  margin-top: 10px;
+}
 #main .main-second .left .image .bottom .img-bottom .prev,
 #main .main-second .left .image .bottom .img-bottom .next {
   position: absolute;

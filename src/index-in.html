@@ -252,7 +252,7 @@
                             <a href="javascript:;" data-title="text-last">
                                 猜你喜欢
                             </a>
-                            <a href="javascript:;" id="topUp" style="display: none;">
+                            <a href="javascript:;" id="topUp" style="display: none;" data-title="header">
                                 <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-xiangxiajiantou-copy"></use>
                                 </svg>
@@ -442,43 +442,61 @@
                         </ul>
                     </div>
                     <div class="image">
-                        <div class="top">
-                            <a href="" class="slider">
-                                <div class="image-all">
-                                    <img src="../src/img/O1CN01XAFZ3u271b674HQmY_!!6000000007737-0-octopus.jpg" alt="">
-                                    <img src="../src/img/banner1.jpg" alt="">
-                                    <img src="../src/img/banner2.jpg" alt="">
-                                    <img src="../src/img/banner3.jpg" alt="">
-                                    <img src="../src/img/banner4.jpg" alt="">
-                                    <img src="../src/img/O1CN01XAFZ3u271b674HQmY_!!6000000007737-0-octopus.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="lt prev"><svg class="icon" aria-hidden="true">
+                        <div class="top slider">
+                            <div class="image-all">
+                                <img src="../src/img/O1CN01XAFZ3u271b674HQmY_!!6000000007737-0-octopus.jpg" alt="">
+                                <img src="../src/img/banner1.jpg" alt="">
+                                <img src="../src/img/banner2.jpg" alt="">
+                                <img src="../src/img/banner3.jpg" alt="">
+                                <img src="../src/img/banner4.jpg" alt="">
+                            </div>
+                            <span class="prev">
+                                <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-xiangzuojiantou" style="color: #fff;"></use>
-                                </svg></div>
-                            <div class="gt next"><svg class="icon" aria-hidden="true">
+                                </svg>
+                            </span>
+                            <span class="next">
+                                <svg class="icon" aria-hidden="true">
                                     <use xlink:href="#icon-xiangyoujiantou" style="color: #fff;"></use>
-                                </svg></div>
+                                </svg>
+                            </span>
                         </div>
                         <div class="bottom">
                             <div class="bottom-one">
                                 <span class="text"><img src="../src/img/下载 (1).png" alt="">理想生活上天猫</span>
                                 <span class="const"><a style="color: red;">1</a>/5</span>
                             </div>
-                            <a href="" class="bottom-two">
-                                <div class="lt"><svg class="icon" aria-hidden="true">
-                                        <use xlink:href="#icon-xiangzuojiantou" style="color: #fff;"></use>
-                                    </svg></div>
-                                <div class="gt"><svg class="icon" aria-hidden="true">
-                                        <use xlink:href="#icon-xiangyoujiantou" style="color: #fff;"></use>
-                                    </svg></div>
-                                <div>
-                                    <img src="../src/img/TB1jq1HekvoK1RjSZPfXXXPKFXa-502-380.jpg_240x240q90.jpg" alt="">
+
+                            <div class="img-bottom">
+                                <div class="bottom-two slider-one">
+                                    <div class="one">
+                                        <img src="../src/img/TB1jq1HekvoK1RjSZPfXXXPKFXa-502-380.jpg_240x240q90.jpg"
+                                            alt="">
+                                        <img src="../src/img/TB1NASFejDpK1RjSZFrXXa78VXa-502-380.jpg_240x240q90.jpg"
+                                            alt="">
+                                        <img src="../src/img/banner5.jpg" alt="">
+                                        <img src="../src/img/banner6.jpg" alt="">
+                                        <img src="../src/img/banner7.jpg" alt="">
+                                        <img src="../src/img/banner8.jpg" alt="">
+                                        <img src="../src/img/banner9.jpg" alt="">
+                                        <img src="../src/img/banner10.jpg" alt="">
+                                        <img src="../src/img/TB1jq1HekvoK1RjSZPfXXXPKFXa-502-380.jpg_240x240q90.jpg"
+                                            alt="">
+                                        <img src="../src/img/TB1NASFejDpK1RjSZFrXXa78VXa-502-380.jpg_240x240q90.jpg"
+                                            alt="">
+                                    </div>
+                                    <span class="prev">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-xiangzuojiantou" style="color: #fff;"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="next">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-xiangyoujiantou" style="color: #fff;"></use>
+                                        </svg>
+                                    </span>
                                 </div>
-                                <div>
-                                    <img src="../src/img/TB1NASFejDpK1RjSZFrXXa78VXa-502-380.jpg_240x240q90.jpg" alt="">
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -581,7 +599,7 @@
             </div>
 
             <div class="main-third">
-                <div class="one-line">
+                <div class="one-line" id="one-line">
                     <h3>
                         <span>有好货</span>
                         <img src="../src/img/O1CN01EjcAPM25IsjiwGyYs_!!6000000007504-2-tps-65-20.png" alt=""
@@ -648,7 +666,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="text-last">
+                <div class="text-last" id="text-last">
                     <span>猜你喜欢</span>
                     <img src="../src/img/O1CN01x0HokP1RvHJCaEcuY_!!6000000002173-2-tps-65-20.png" title="猜你喜欢">
                 </div>

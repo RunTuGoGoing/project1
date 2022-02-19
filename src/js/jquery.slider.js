@@ -22,9 +22,11 @@ $.fn.extend({
         // 1. 元素选择
         elms.sliderElm = this.children('div'); // 轮播的元素
         elms.btns = this.children('span'); // 左右按钮
-  
+        
         // 2. 复制第一张图片放到最后
         elms.sliderElm.append(elms.sliderElm.children('img').first().clone());
+        elms.sliderElm.append(elms.sliderElm.children('img').eq(1).clone());
+
   
         // 3. 设置索引
         elms.index = 1;

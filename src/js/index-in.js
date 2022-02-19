@@ -22,6 +22,11 @@ $(function () {
         speed: 600,
         delay: 2000
     });
+
+    $('.slider-one').slider({
+        speed: 500,
+        delay: 1500
+    });
 });
 
 // 楼梯特效
@@ -30,15 +35,19 @@ $(function () {
         let top = $('#' + $(this).attr('data-title')).offset().top;
         $('html').animate({
             scrollTop: top
-        }, 1980);
+        }, 600);
     });
 
     $(window).on('scroll', function () {
         let scrollTop = $(document).scrollTop();
-        let index = Math.round(scrollTop / 1980);
-
-        $('#menu>a').removeClass('active');
-        $('#menu>a:eq(' + index + ')').addClass('active');
+        
+        // 滚动切换样式
+        if (scrollTop > 1020) {
+            $('#menu>a:nth-of-type(2)').addClass('active').siblings().removeClass('active');
+        }
+        if (scrollTop < 1020) {
+            $('#menu>a:nth-of-type(1)').addClass('active').siblings().removeClass('active');
+        }
 
         // 顶部按钮的出现消失
         if (scrollTop > 800) {
@@ -57,5 +66,3 @@ $(function () {
         }
     });
 });
-
-// 回到顶部按钮
